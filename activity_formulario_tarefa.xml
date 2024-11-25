@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Produto"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtDataVencimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data de Vencimento"
+        android:inputType="date"
+        android:layout_below="@id/edtDescricao"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edtPrioridade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prioridade"
+        android:inputType="number"
+        android:layout_below="@id/edtDataVencimento"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edtCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Categoria"
+        android:inputType="text"
+        android:layout_below="@id/edtPrioridade"
+        android:layout_marginTop="8dp" />
+
+    <Switch
+        android:id="@+id/swtConcluida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Concluída"
+        android:layout_below="@id/edtCategoria"
+        android:layout_marginTop="8dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/red"
+        android:layout_below="@id/swtConcluida"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnExcluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excluir"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/red"
+        android:layout_below="@id/swtConcluida"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/btnSalvar"
+        android:layout_marginStart="8dp" />
+
+</RelativeLayout>
